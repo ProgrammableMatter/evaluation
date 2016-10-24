@@ -48,11 +48,11 @@ Oscilloscope Measurement Notes
 | osc2        | 2 - 22               | 5       | 10.7           | cap1       |              
 
 | Function Config ID | Function Name | Action | Input Data |
-|---------------|--------|------------|
-| func1-1 | f1            | trend  | Analogue 1 |
-| func2-1 | f2            | trend  | Analogue 2 |
-| func3-1 | f3            | trend  | Analogue 3 |
-| func4-1 | f4            | trend  | Analogue 4 |
+|--------------------|---------------|---------------------|
+| func1-1            | f1            | trend  | Analogue 1 |
+| func2-1            | f2            | trend  | Analogue 2 |
+| func3-1            | f3            | trend  | Analogue 3 |
+| func4-1            | f4            | trend  | Analogue 4 |
 
 | Connection ID | Probe | Input Data | Notes |
 |---------------|-------|------------|-------|
