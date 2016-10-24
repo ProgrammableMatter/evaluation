@@ -8,7 +8,6 @@ Clock Skew Synchronization
 |--------|-------|-------------|
 | <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-4.png" width=100 /> | soft1, cap1, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean | 
 | <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order2-20sec-0.png" width=100 /> | soft1, cap1, osc2, net2, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean |
-
 | <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c0-order1-5sec-0.png" width=100 />
 <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c0-order1-5sec-1.png" width=100 />
 <img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c0-order1-5sec-2.png" width=100 />
