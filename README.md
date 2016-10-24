@@ -1,3 +1,10 @@
+Measurements
+============
+
+
+<img src="./results/clock-skew-synchronization/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order2-20sec-4.png" width=100 />
+
+
 Setup Configurations
 ====================
 
@@ -27,20 +34,27 @@ Order Setup in Measurements
 ---------------------------
 Setup ID | Network Dimension | Order P.ID | Address | Details |
 |--------|-------------------|-------|--------------|---------|
-| n1     | (12x1) | {6,3,9,1,7,4,11,2,10,5,12} | {(1,1), (2,1), (3,1), (4,1), (5,1), (6,1), (7,1), (8,1), (9,1), (10,1), (11,1), (12,1)} | order having good discrepancy in between subsequent particles |
-| n2     | (12x1) | {6,2,10,1,8,4,12,3,9,7,11,6,5} | {(1,1), (2,1), (3,1), (4,1), (5,1), (6,1), (7,1), (8,1), (9,1), (10,1), (11,1), (12,1)} | same as 1 but less discrepancy |
+| net1     | (12x1) | {6, 3, 9, 1, 7, 4, 11, 2, 10, 5, 12} | {(1,1), (2,1), (3,1), (4,1), (5,1), (6,1), (7,1), (8,1), (9,1), (10,1), (11,1), (12,1)} | order having good discrepancy in between subsequent particles's frequency |
+| net2     | (12x1) | {6, 2, 10, 1, 8, 4, 12, 3, 9, 7, 11, 6, 5} | {(1,1), (2,1), (3,1), (4,1), (5,1), (6,1), (7,1), (8,1), (9,1), (10,1), (11,1), (12,1)} | same as 1 but less discrepancy |
 
 
-Measurement Notes
------------------
+Oscilloscope Measurement Notes
+------------------------------
 | Setup ID | Capture Duration [s] | [MSa/s] | Pre-Trigger [s] |  Details |
 |----------|----------------------|---------|-----------------|----------|
-| m1        | 2.8 - 7.8            | 5       | 5              | c1       |
-| m2        | 2 - 22               | 5       | 10.7           | c1       |              
+| osc1        | 2.8 - 7.8            | 5       | 5              | cap1       |
+| osc2        | 2 - 22               | 5       | 10.7           | cap1       |              
 
 Capacitor Configurations
 ------------------------
 
 | Setup ID | Caps [µF] | Configuration |
 |----------|-----------|---------------|
-| c1       | 560       | each 2nd particle |
+| cap1       | 560       | each 2nd particle |
+
+
+Software Configuration
+----------------------
+| Setup ID | Averaging Method | outlier rejection | FiFo Size [Elements] | Pitch |
+|----------|------------------|-------------------|–---------------------|-------| 
+| soft1    | mean             | -                 | 4                    | 16    |
