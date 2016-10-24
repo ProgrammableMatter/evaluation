@@ -48,7 +48,7 @@ Oscilloscope Measurement Notes
 | osc2        | 2 - 22               | 5       | 10.7           | cap1       |              
 
 | Function Config ID | Function Name | Action | Input Data |
-|--------------------|---------------|---------------------|
+|--------------------|---------------|--------|------------|
 | func1-1            | f1            | trend  | Analogue 1 |
 | func2-1            | f2            | trend  | Analogue 2 |
 | func3-1            | f3            | trend  | Analogue 3 |
@@ -72,8 +72,9 @@ Capacitor Configurations
 
 Software Configuration
 ----------------------
+
 | Setup ID | Averaging Method | outlier rejection | FiFo Size [Elements] | Pitch |
-|----------|------------------|-------------------|–---------------------|-------| 
+|----------|------------------|-------------------|----------------------|-------| 
 | soft1    | mean             | -                 | 4                    | 16    |
 
 
