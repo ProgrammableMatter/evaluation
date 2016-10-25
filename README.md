@@ -20,11 +20,11 @@ Clock Skew Synchronization
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-4.png" width=100 /> | soft3, soft4 (particle 4), cap0, osc3, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | particle 4 having linear regression, raw observation otherwise, 46s |
 
 
-| <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-0.png" width=100 />
- <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-1.png" width=100 />
- <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-2.png" width=100 />
- <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-3.png" width=100 />
- <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-4.png" width=100 />
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-4.png" width=100 />
 | soft4 cap0, osc4, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 98s |
 Setup Configurations
 ====================
