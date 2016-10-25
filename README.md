@@ -27,12 +27,37 @@ Clock Skew Synchronization
 
 | Result | Setup | Description | 
 |--------|-------|-------------|
-| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-4.png" width=100 />  | soft1, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, caps, 2s |
-| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-4.png" width=100 /> | soft1, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, 2s |
-| <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-4.png" width=100 />  | soft5, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, outlier 2sigma, 2s |
+| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c560-each2nd-particle-order1-2sec-4.png" width=100 />  | soft1, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 12, mean, caps, 2s |
+| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch12-c0-order1-2sec-4.png" width=100 /> | soft1, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 12, mean, 2s |
+| <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-pitch12-c0-order1-2sec-4.png" width=100 />  | soft5, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 12, mean, outlier 2sigma, 2s |
 
+|<img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch16-c560-each2nd-particle-order1-2sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch16-c560-each2nd-particle-order1-2sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch16-c560-each2nd-particle-order1-2sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch16-c560-each2nd-particle-order1-2sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch16-c560-each2nd-particle-order1-2sec-4.png" width=100 /> | soft6, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 16, mean, caps, 2s |
+ 
+ 
+|<img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch20-c560-each2nd-particle-order1-2sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch20-c560-each2nd-particle-order1-2sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch20-c560-each2nd-particle-order1-2sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch20-c560-each2nd-particle-order1-2sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch20-c560-each2nd-particle-order1-2sec-4.png" width=100 /> | soft7, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 16, mean, caps, 2s |
+ 
+ 
+|<img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-4.png" width=100 /> | soft8, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 16, mean, caps, 2s |
 
-
+ 
+|<img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-4.png" width=100 /> | soft9, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 16, mean, caps, 2s |
+ 
 
 Setup Configurations
 ====================
@@ -112,11 +137,15 @@ Software Configuration
 
 | Setup ID | Averaging Method | outlier rejection | FiFo Size [Elements] | Pitch | Other Configuration |
 |----------|------------------|-------------------|----------------------|-------|-------|
-| soft1    | mean             | -                 | 4                     | 12    | baud1, time1 |
-| soft2    | progressive mean (75% of old value + 25 % new value) | - | - | 12    | baud1, time1 |
-| soft3    | raw observation  | -                 | -                     | 12    | baud1, time1 | 
-| soft4    | least square fitting  | -            | 40                    | 12    | baud1, time1 | 
-| soft5    | mean without outlier | 2sigma        | 4                     | 12    | baud1, time1 | 
+| soft1    | mean             | -                 | 4                    | 12   | baud1, time1 |
+| soft2    | progressive mean (75% of old value + 25 % new value) | - | -| 12   | baud1, time1 |
+| soft3    | raw observation  | -                 | -                    | 12   | baud1, time1 | 
+| soft4    | least square fitting  | -            | 40                   | 12   | baud1, time1 | 
+| soft5    | mean without outlier | 2sigma        | 4                    | 12   | baud1, time1 | 
+| soft6    | mean             | -                 | 4                    | 16   | baud1, time1 | 
+| soft7    | mean             | -                 | 4                    | 20   | baud1, time1 | 
+| soft8    | mean             | -                 | 4                    | 24   | baud1, time1 | 
+| soft9    | mean             | -                 | 4                    | 28   | baud1, time1 | 
 
 | Setup ID | Manchester Clock Delay [MCU Cycles] | Overtime Limit Short Interval | Overtime Limit Long Interval |
 |----------|-----------|-------------------------------|--------------------------------------------------------|
