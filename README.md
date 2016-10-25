@@ -4,6 +4,8 @@ Measurements
 Clock Skew Synchronization
 --------------------------
 
+### Short Term (Startup)
+
 | Result | Setup | Description | 
 |--------|-------|-------------|
 | <img src="./results/clock-skew-synchronization/fifo-mean/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/sync-clock-skew-fifo4-mean-pitch16-c560-each2nd-particle-order1-20sec-4.png" width=100 /> | soft1, cap1, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, caps, 20s | 
@@ -19,7 +21,33 @@ Clock Skew Synchronization
 | <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-4.png" width=100 />  | soft3, cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | raw observation, 20s | 
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-4.png" width=100 /> | soft3, soft4 (particle 4), cap0, osc3, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | particle 4 having linear regression, raw observation otherwise, 46s |
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch16-c0-order1-98sec-4.png" width=100 /> | soft4 cap0, osc4, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 98s |
-| <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-4.png" width=100 /> | soft5 cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo mean without outlier 2sigma, 20s |
+| <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-4.png" width=100 /> | soft5 cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean without outlier 2sigma, 20s |
+
+### Long Term
+
+| Result | Setup | Description | 
+|--------|-------|-------------|
+| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-4.png" width=100 />  | soft1, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, 2s |
+| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-4.png" width=100 /> | soft1, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, 2s |
+
+
+| <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-4.png" width=100 />
+ | soft5, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, outlier 2sigma, 2s |
+
+
+
 
 Setup Configurations
 ====================
@@ -66,7 +94,9 @@ Oscilloscope Measurement Notes
 | osc1     | 2.5 -  7.5           | 5       | An. 1, 3.8v | 5               | 500ms     |
 | osc2     | 0.7 - 20.7           | 5       | An. 1, 3.8v | 10.7            | 2s        |
 | osc3     | 1   - 46             | 2       | An. 1, 3.8v | 21              | 5s        |
-| osc4     |     - 98             | 1       | An. 1, 3.8v | 48              | 10s        |
+| osc4     |     - 98             | 1       | An. 1, 3.8v | 48              | 10s       |
+| osc5     | 0-2                  | 5       | An. 1, 3.8v | 0               | 100ms     |
+
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
 
