@@ -17,8 +17,15 @@ Clock Skew Synchronization
 | <img src="./results/clock-skew-synchronization/progressive-mean/sync-clock-skew-progressive-mean-75-25-pitch16-c0-order1-5sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/progressive-mean/sync-clock-skew-progressive-mean-75-25-pitch16-c0-order1-5sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/progressive-mean/sync-clock-skew-progressive-mean-75-25-pitch16-c0-order1-5sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/progressive-mean/sync-clock-skew-progressive-mean-75-25-pitch16-c0-order1-5sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/progressive-mean/sync-clock-skew-progressive-mean-75-25-pitch16-c0-order1-5sec-4.png" width=100 />  | soft2, cap0, osc1, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | progressive mean, 5s | 
 | <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c560-each2nd-particle-order1-20sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c560-each2nd-particle-order1-20sec-1.png" width=100 />   <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c560-each2nd-particle-order1-20sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c560-each2nd-particle-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c560-each2nd-particle-order1-20sec-4.png" width=100 /> | soft3, cap1, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | raw observation, caps, 20s | 
 | <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch16-c0-order1-20sec-4.png" width=100 />  | soft3, cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | raw observation, 20s | 
-| <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-4.png" width=100 /> | soft3, soft4 (particle 4), cap0, osc3, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | particle 4 having least square, raw observation otherwise, 46s |
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch16-c0-order1-46sec-4.png" width=100 /> | soft3, soft4 (particle 4), cap0, osc3, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | particle 4 having linear regression, raw observation otherwise, 46s |
 
+
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-least-square-pitch16-c0-order1-98sec-4.png" width=100 />
+| soft4 cap0, osc4, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 98s |
 Setup Configurations
 ====================
 
@@ -64,6 +71,7 @@ Oscilloscope Measurement Notes
 | osc1     | 2.5 -  7.5           | 5       | An. 1, 3.8v | 5               | 500ms     |
 | osc2     | 0.7 - 20.7           | 5       | An. 1, 3.8v | 10.7            | 2s        |
 | osc3     | 1   - 46             | 2       | An. 1, 3.8v | 21              | 5s        |
+| osc4     |     - 98             | 1       | An. 1, 3.8v | 48              | 10s        |
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
 
@@ -97,7 +105,7 @@ Software Configuration
 | soft1    | mean             | -                 | 4                     | 16    | baud1, time1 |
 | soft2    | progressive mean (75% of old value + 25 % new value) | - | - | 16    | baud1, time1 |
 | soft3    | raw observation  | -                 | -                     | 16    | baud1, time1 | 
-| soft4    | least square fitting  | -                 | 40               | 16    | baud1, time1 | 
+| soft4    | least square fitting  | -            | 40                    | 16    | baud1, time1 | 
 
 | Setup ID | Manchester Clock Delay [MCU Cycles] | Overtime Limit Short Interval | Overtime Limit Long Interval |
 |----------|-----------|-------------------------------|--------------------------------------------------------|
