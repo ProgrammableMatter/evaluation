@@ -27,24 +27,9 @@ Clock Skew Synchronization
 
 | Result | Setup | Description | 
 |--------|-------|-------------|
-| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-0.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-1.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-2.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-3.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-4.png" width=100 />  | soft1, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, 2s |
-| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-0.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-1.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-2.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-3.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-4.png" width=100 /> | soft1, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, 2s |
-
-
-| <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-0.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-1.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-2.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-3.png" width=100 />
- <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-c0-order1-20sec-4.png" width=100 />
- | soft5, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, outlier 2sigma, 2s |
+| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c560-each2nd-particle-order1-2sec-4.png" width=100 />  | soft1, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, 2s |
+| <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-c0-order1-2sec-4.png" width=100 /> | soft1, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, 2s |
+| <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-c0-order1-2sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-c0-order1-2sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-c0-order1-2sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-c0-order1-2sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/long-term/sync-clock-skew-mean-2sigma-outlier-long-term-c0-order1-2sec-4.png" width=100 />  | soft5, cap0, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean, outlier 2sigma, 2s |
 
 
 
