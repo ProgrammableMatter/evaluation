@@ -25,18 +25,16 @@ Clock Skew Synchronization
 
 | Video | Setup | Description | 
 |-------|-------|-------------|
-| [sync-method-linear-regression-least-square-fifo40-pitch0](https://drive.google.com/open?id=0Bx3U4CEhKK8ddko4T3JDUGZIMlk)         | | | 
-| [sync-method-mean-fifo40-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dNEVGNUY1clBXTzA)                                  | | | 
-| [sync-method-mean-fifo8-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dXzZoNkstTTV1Yjg)                                   | | | 
-| [sync-method-mean-without-marked-outlier-2sigma-fifo40-pitch0](https://drive.google.com/open?id=0Bx3U4CEhKK8dLUU3b09HZ0RUUXc)     | | | 
-| [sync-method-mean-without-outlier-2sigma-fifo15-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dNklJeGpqTVN4Qlk)           | | | 
-| [sync-method-mean-without-outlier-2sigma-fifo40-pitch-20](https://drive.google.com/open?id=0Bx3U4CEhKK8ddTZubWFfcU8yYkU)          | | | 
-| [sync-method-mean-without-outlier-2sigma-fifo40-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dQ0JteDRxSTdyMUE)           | | | 
-| [sync-method-progressive-mean-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dcDgxMFJ1aENsRkE)                             | | | 
-| [sync-method-raw-observation-no-smoothing-pitch12](https://drive.google.com/open?id=0Bx3U4CEhKK8dNTBrSmJPQ2UtSUE)                 | | | 
-| [time-sync-sync-method-mean-fifo4-in-phase-shifting-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dZkdBdFRIeEwyWlk)       | | | 
-
-
+| [sync-method-mean-fifo40-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dNEVGNUY1clBXTzA)                                  | soft10, mean, fifo 40, pitch 16 | | 
+| [sync-method-mean-fifo8-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dXzZoNkstTTV1Yjg)                                   | soft10, mean, fifo 8, pitch 16 | | 
+| [sync-method-mean-without-outlier-2sigma-fifo15-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dNklJeGpqTVN4Qlk)           | soft10, mean without outlier, 2*σ , fifo 15, pitch 16 | outlier: values beyond µ+/-f*σ are not considered when averaging | 
+| [sync-method-mean-without-outlier-2sigma-fifo40-pitch-20](https://drive.google.com/open?id=0Bx3U4CEhKK8ddTZubWFfcU8yYkU)          | soft10, mean without outlier, 2*σ, fifo 40, pitch 20 | outlier: values beyond µ+/-f*σ are not considered when averaging | 
+| [sync-method-mean-without-outlier-2sigma-fifo40-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dQ0JteDRxSTdyMUE)           | soft10, mean without outlier, 2*σ, fifo 40, pitch 16 | outlier: values beyond µ+/-f*σ are not considered when averaging | 
+| [sync-method-mean-without-marked-outlier-2sigma-fifo40-pitch0](https://drive.google.com/open?id=0Bx3U4CEhKK8dLUU3b09HZ0RUUXc)     | soft10, mean without marked outlier, 2 sigma, fifo 40, pitch 0 | marked outlier: marked when value enters the FiFo according to the current values in FiFo| 
+| [sync-method-progressive-mean-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dcDgxMFJ1aENsRkE)                             | soft10, progressive mean 50%/50%, pitch 16 |  new = (old + new) / 2 | 
+| [sync-method-raw-observation-no-smoothing-pitch12](https://drive.google.com/open?id=0Bx3U4CEhKK8dNTBrSmJPQ2UtSUE)                 | soft10, no smoothing, pitch 12 | observed value is new value without any averaging | 
+| [sync-method-linear-regression-least-square-fifo40-pitch0](https://drive.google.com/open?id=0Bx3U4CEhKK8ddko4T3JDUGZIMlk)         | soft10, linear regression, fifo 40, pitch 0  | overshooting, outliers get too much weight | 
+| [time-sync-sync-method-mean-fifo4-in-phase-shifting-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dZkdBdFRIeEwyWlk)       | soft10, mean, fifo 4, pitch 16, in phase shifting | local time ISR in phase shifting: 1st impl. approach | 
 
 
 ### Long Term
@@ -133,11 +131,12 @@ Software Configuration
 | soft2    | progressive mean (75% of old value + 25 % new value) | - | -| 12   | baud1, time1 |
 | soft3    | raw observation  | -                 | -                    | 12   | baud1, time1 | 
 | soft4    | least square fitting  | -            | 40                   | 12   | baud1, time1 | 
-| soft5    | mean without outlier | 2sigma        | 4                    | 12   | baud1, time1 | 
+| soft5    | mean without outlier  | 2*σ          | 4                    | 12   | baud1, time1 | 
 | soft6    | mean             | -                 | 4                    | 16   | baud1, time1 | 
 | soft7    | mean             | -                 | 4                    | 20   | baud1, time1 | 
 | soft8    | mean             | -                 | 4                    | 24   | baud1, time1 | 
 | soft9    | mean             | -                 | 4                    | 28   | baud1, time1 | 
+| soft10   | -                | -                 | -                    | -    | baud1, time1 | 
 
 | Setup ID | Manchester Clock Delay [MCU Cycles] | Overtime Limit Short Interval | Overtime Limit Long Interval |
 |----------|-----------|-------------------------------|--------------------------------------------------------|
