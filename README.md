@@ -23,6 +23,22 @@ Clock Skew Synchronization
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-4.png" width=100 /> | soft4 cap0, osc4, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 98s |
 | <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-4.png" width=100 /> | soft5 cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean without outlier 2sigma, 20s |
 
+| Video | Setup | Description | 
+|-------|-------|-------------|
+| [sync-method-linear-regression-least-square-fifo40-pitch0](https://drive.google.com/open?id=0Bx3U4CEhKK8ddko4T3JDUGZIMlk) [Github](.results/clock-skew-synchronization/videos/sync-method-linear-regression-least-square-fifo40-pitch0.mp4) | | | 
+| [sync-method-mean-fifo40-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dNEVGNUY1clBXTzA) [Github](.results/clock-skew-synchronization/videos/sync-method-mean-fifo40-pitch16.mp4) | | | 
+| [sync-method-mean-fifo8-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dXzZoNkstTTV1Yjg) [Github](.results/clock-skew-synchronization/videos/sync-method-mean-fifo8-pitch16.mp4) | | | 
+| [sync-method-mean-without-marked-outlier-2sigma-fifo40-pitch0](https://drive.google.com/open?id=0Bx3U4CEhKK8dLUU3b09HZ0RUUXc) [Github](.results/clock-skew-synchronization/videos/sync-method-mean-without-marked-outlier-2sigma-fifo40-pitch0.mp4) | | | 
+| [sync-method-mean-without-outlier-2sigma-fifo15-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dNklJeGpqTVN4Qlk) [Github](.results/clock-skew-synchronization/videos/sync-method-mean-without-outlier-2sigma-fifo15-pitch16.mp4) | | | 
+| [sync-method-mean-without-outlier-2sigma-fifo40-pitch-20](https://drive.google.com/open?id=0Bx3U4CEhKK8ddTZubWFfcU8yYkU) [Github](.results/clock-skew-synchronization/videos/sync-method-mean-without-outlier-2sigma-fifo40-pitch-20.mp4) | | | 
+| [sync-method-mean-without-outlier-2sigma-fifo40-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dQ0JteDRxSTdyMUE) [Github](.results/clock-skew-synchronization/videos/sync-method-mean-without-outlier-2sigma-fifo40-pitch16.mp4) | | | 
+| [sync-method-progressive-mean-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dcDgxMFJ1aENsRkE) [Github](.results/clock-skew-synchronization/videos/sync-method-progressive-mean-pitch16.mp4) | | | 
+| [sync-method-raw-observation-no-smoothing-pitch12](https://drive.google.com/open?id=0Bx3U4CEhKK8dNTBrSmJPQ2UtSUE) [Github](.results/clock-skew-synchronization/videos/sync-method-raw-observation-no-smoothing-pitch12](https://drive.google.com/open?id=0Bx3U4CEhKK8dNTBrSmJPQ2UtSUE.mp4) | | | 
+| [time-sync-sync-method-mean-fifo4-in-phase-shifting-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dZkdBdFRIeEwyWlk) [Github](.results/clock-skew-synchronization/videos/time-sync-sync-method-mean-fifo4-in-phase-shifting-pitch16.mp4) | | | 
+
+
+
+
 ### Long Term
 
 | Result | Setup | Description | 
