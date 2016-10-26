@@ -4,7 +4,7 @@ Measurements
 Clock Skew Synchronization
 --------------------------
 
-### Short Term (Startup)
+### Short Term (Startup) Clock Skew Synchronization
 
 | Result | Setup | Description | 
 |--------|-------|-------------|
@@ -37,7 +37,7 @@ Clock Skew Synchronization
 | [time-sync-sync-method-mean-fifo4-in-phase-shifting-pitch16](https://drive.google.com/open?id=0Bx3U4CEhKK8dZkdBdFRIeEwyWlk)       | soft10, mean, fifo 4, pitch 16, in phase shifting | local time ISR in phase shifting: 1st impl. approach | 
 
 
-### Long Term
+### Long Term Clock Skew Synchronization
 
 | Result | Setup | Description | 
 |--------|-------|-------------|
@@ -55,30 +55,30 @@ Jitter Measurements
 
 | Result | Setup | Description | 
 |--------|-------|-------------|
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle02-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (2,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle03-id09-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (3,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle04-id01-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (4,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle05-id07-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (5,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle06-id04-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (6,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle07-id11-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (7,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle08-id02-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (8,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle09-id10-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (9,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle10-id05-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (10,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle11-id12-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (11,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle12-id08-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (12,1), pitch 0 |
-| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle12-id08-north-c560-fifo4-mean-calculationtype-float-pitch0-long-term.png" width=100 /> | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (13,1), , pitch 0, long term |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle02-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-2, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (2,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle03-id09-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-3, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (3,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle04-id01-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-4, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (4,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle05-id07-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-5, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (5,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle06-id04-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-6, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (6,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle07-id11-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-7, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (7,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle08-id02-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-8, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (8,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle09-id10-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-9, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (9,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle10-id05-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-10, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (10,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle11-id12-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-11, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (11,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle12-id08-north-c560-fifo4-mean-calculationtype-float-pitch0.png" width=100 /> | proAn1-12, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (12,1), pitch 0 |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle12-id08-north-c560-fifo4-mean-calculationtype-float-pitch0-long-term.png" width=100 /> | proAn1-12, soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (13,1), , pitch 0, long term |
 | | |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle02-id03-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (1,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle03-id09-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (2,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle04-id01-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (3,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle05-id07-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (4,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle06-id04-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (5,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle07-id11-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (6,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle08-id02-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (7,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle09-id10-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (8,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle10-id05-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (9,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle11-id12-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (10,1), pitch 18 |
-<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle12-id08-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (11,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle02-id03-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-2, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (1,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle03-id09-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-3, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (2,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle04-id01-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-4, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (3,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle05-id07-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-5, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (4,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle06-id04-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-6, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (5,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle07-id11-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-7, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (6,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle08-id02-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-8, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (7,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle09-id10-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-9, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (8,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle10-id05-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-10, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (9,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle11-id12-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-11, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (10,1), pitch 18 |
+<img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle12-id08-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-12, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (11,1), pitch 18 |
 
 * Expected discretization step of particle (12,1): +/- 63.5 * (1/8284000) = +/- 7.665µs
 
@@ -148,7 +148,17 @@ Oscilloscope Measurement Notes
 | proAn2-1 | Analogue 2 | internal time tracking ISR: Particle  4 | 1MΩ, DC |
 | proAn3-1 | Analogue 3 | internal time tracking ISR: Particle  7 | 1MΩ, DC |
 | proAn4-1 | Analogue 4 | internal time tracking ISR: Particle 12 | 1MΩ, DC |
-| proAn1-2 | Analogue 1 | rx north, particle 2                    | 1MΩ, DC |
+| proAn1-2 | Analogue 1 | rx north, particle 2, address (2,1)     | 1MΩ, DC |
+| proAn1-3 | Analogue 1 | rx north, particle 3, address (3,1)     | 1MΩ, DC |
+| proAn1-4 | Analogue 1 | rx north, particle 4, address (4,1)     | 1MΩ, DC |
+| proAn1-5 | Analogue 1 | rx north, particle 5, address (5,1)     | 1MΩ, DC |
+| proAn1-6 | Analogue 1 | rx north, particle 6, address (6,1)     | 1MΩ, DC |
+| proAn1-7 | Analogue 1 | rx north, particle 7, address (7,1)     | 1MΩ, DC |
+| proAn1-8 | Analogue 1 | rx north, particle 8, address (8,1)     | 1MΩ, DC |
+| proAn1-9 | Analogue 1 | rx north, particle 9, address (9,1)     | 1MΩ, DC |
+| proAn1-10 | Analogue 1 | rx north, particle 10, address (10,1)  | 1MΩ, DC |
+| proAn1-11 | Analogue 1 | rx north, particle 11, address (11,1)  | 1MΩ, DC |
+| proAn1-12 | Analogue 1 | rx north, particle 12, address (12,1)  | 1MΩ, DC |
 
 
 Capacitor Configurations
