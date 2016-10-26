@@ -81,6 +81,7 @@ Jitter Measurements
 <img src="./results/jitter/time-pdu-duration/with-pitch/rx-last-falling-edge-histogram-particle12-id08-north-c560-fifo4-mean-calculationtype-float-pitch18.png" width=100 /> | proAn1-12, soft12, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (11,1), pitch 18 |
 
 * Expected discretization step of particle (12,1): +/- 63.5 * (1/8284000) = +/- 7.665µs
+* A pitch of 18 seems reasonable, 20 is still too high, 16 too low.
 
 Setup Configurations
 ====================
