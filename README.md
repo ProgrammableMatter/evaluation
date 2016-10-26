@@ -49,6 +49,27 @@ Clock Skew Synchronization
 | <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch24-c560-each2nd-particle-order1-2sec-4.png" width=100 /> | soft8, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 24, mean, caps, 2s |
 | <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean/long-term/sync-clock-skew-mean-long-term-pitch28-c560-each2nd-particle-order1-2sec-4.png" width=100 /> | soft9, cap1, osc5, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, pitch 28, mean, caps, 2s | 
 
+
+Jitter Measurements
+-------------------
+
+| Result | Setup | Description | 
+|--------|-------|-------------|
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle02-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (2,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle03-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (3,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle04-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (4,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle05-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (5,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle06-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (6,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle07-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (7,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle08-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (8,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle09-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (9,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle10-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (10,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle11-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (11,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle12-id03-north-c560-fifo4-mean-calculationtype-float-pitch0.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (12,1) |
+| <img src="./results/jitter/time-pdu-duration/rx-last-falling-edge-histogram-particle12-id03-north-c560-fifo4-mean-calculationtype-float-pitch0-long-term.png" | soft11, cap1, osc6, net1, mcu1, hist1 | last time PDU falling edge jitter histogram, node (13,1), long term |
+
+* Expected discretization step particle (12,1): +/- 63.5 * (1/8284000) = +/- 7.665µs
+
 Setup Configurations
 ====================
 
@@ -89,13 +110,14 @@ Setup ID | Network Dimension | Order P.ID | Address | Details |
 Oscilloscope Measurement Notes
 ------------------------------
 
-| Setup ID | Capture Duration [s] | [MSa/s] | Trigger     | Pre-Trigger [s] | Time/Div. |
+| Setup ID | Capture Duration | [Sa/s] | Trigger     | Pre-Trigger [s] | Time/Div. |
 |----------|----------------------|---------|-------------|-----------------|-----------|
-| osc1     | 2.5 -  7.5           | 5       | An. 1, 3.8v | 5               | 500ms     |
-| osc2     | 0.7 - 20.7           | 5       | An. 1, 3.8v | 10.7            | 2s        |
-| osc3     | 1   - 46             | 2       | An. 1, 3.8v | 21              | 5s        |
-| osc4     |     - 98             | 1       | An. 1, 3.8v | 48              | 10s       |
-| osc5     | 0-2                  | 5       | An. 1, 3.8v | 0               | 100ms     |
+| osc1     | 2.5s -  7.5s           | 5M      | An. 1, 3.8v, rising local time ISR | 5                | 500ms     |
+| osc2     | 0.7s - 20.7s           | 5M      | An. 1, 3.8v, rising local time ISR | 10.7             | 2s        |
+| osc3     | 1s   - 46s             | 2M      | An. 1, 3.8v, rising local time ISR | 21               | 5s        |
+| osc4     |     - 98s             | 1M      | An. 1, 3.8v, rising local time ISR | 48                | 10s       |
+| osc5     | 0s - 2s                  | 5M      | An. 1, 3.8v, rising local time ISR | 0              | 100ms     |
+| osc6     | 7.82ms - 7.92ms      | 10G     | An. 1, 2.5v, 1st falling edge of transmission | 7.871ms | 10µs      |
 
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
@@ -106,13 +128,16 @@ Oscilloscope Measurement Notes
 | func2-1            | f2            | trend  | Analogue 2 | green |
 | func3-1            | f3            | trend  | Analogue 3 | blue  |
 | func4-1            | f4            | trend  | Analogue 4 | purple | 
+| hist1              | -             | histogram max 1280 bins | Analogue 1 | cyan | 
 
-| Connection ID | Probe | Input Data |
-|---------------|-------|------------|
-| proAn1-1 | Analogue 1 | internal time tracking ISR: Particle  1 |
-| proAn2-1 | Analogue 2 | internal time tracking ISR: Particle  4 |
-| proAn3-1 | Analogue 3 | internal time tracking ISR: Particle  7 |
-| proAn4-1 | Analogue 4 | internal time tracking ISR: Particle 12 |
+| Connection ID | Probe | Input Data | Coupling |
+|---------------|-------|------------|----------|
+| proAn1-1 | Analogue 1 | internal time tracking ISR: Particle  1 | 1MΩ, DC |
+| proAn2-1 | Analogue 2 | internal time tracking ISR: Particle  4 | 1MΩ, DC |
+| proAn3-1 | Analogue 3 | internal time tracking ISR: Particle  7 | 1MΩ, DC |
+| proAn4-1 | Analogue 4 | internal time tracking ISR: Particle 12 | 1MΩ, DC |
+| proAn1-2 | Analogue 1 | rx north, particle 2                    | 1MΩ, DC |
+
 
 Capacitor Configurations
 ------------------------
@@ -137,6 +162,7 @@ Software Configuration
 | soft8    | mean             | -                 | 4                    | 24   | baud1, time1 | 
 | soft9    | mean             | -                 | 4                    | 28   | baud1, time1 | 
 | soft10   | -                | -                 | -                    | -    | baud1, time1 | 
+| soft11   | mean             | -                 | 4                    | 0    | baud1, time1 | 
 
 | Setup ID | Manchester Clock Delay [MCU Cycles] | Overtime Limit Short Interval | Overtime Limit Long Interval |
 |----------|-----------|-------------------------------|--------------------------------------------------------|
