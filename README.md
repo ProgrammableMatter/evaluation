@@ -92,6 +92,12 @@ Jitter Measurements
   * according trend 22
   * 16 too low, 28 too high
 
+In-Phase Shifting
+------------------
+| Result | Setup | Description | 
+|--------|-------|-------------|
+| <img src="./results/in-phase-shifting/in-phase-shifting-maxstep2000-fifo4-pitch22-c560-mean.png" width=100 /> | soft14, caps1, osc9,  proAn[1-4]-14, proDig[4-15-1], net1, mcu1| 
+
 Setup Configurations
 ====================
 
@@ -143,6 +149,7 @@ Oscilloscope Measurement Notes
 | osc6     | 7.8ms -  7.9ms          | 10G     | An. 1, 2.5v, 1st falling edge of transmission         | ~7.87ms   | 10µs      |
 | osc7     | -1s    -  1s            | 5M      | An. 1, 3.8v, rising local time ISR | 0                | 200ms     |
 | osc8     | 39.0µs - 40.1µs         | 20G     | An. 1, 2.5v, falling               | 40µ              | 20ns      | 
+| osc9     |-50ms   - 20ms           | 5M      | Digital 4, TTL, falling            |  0               | 10ms      | 
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
 
@@ -187,6 +194,12 @@ Oscilloscope Measurement Notes
 | proAn1-11 | Analogue 1 | rx north, particle 11, address (11,1)  | 1MΩ, DC |
 | proAn1-12 | Analogue 1 | rx north, particle 12, address (12,1)  | 1MΩ, DC |
 | proAn1-13 | Analogue 1 | CLK out, particle 1, address (1,1)     | 1MΩ, DC |
+| proAn1-14 | Analogue 1 | internal time tracking ISR / 16: Particle  1 | 1MΩ, DC |
+| proAn2-14 | Analogue 2 | internal time tracking ISR / 16: Particle  4 | 1MΩ, DC |
+| proAn3-14 | Analogue 3 | internal time tracking ISR / 16: Particle  7 | 1MΩ, DC |
+| proAn4-14 | Analogue 4 | internal time tracking ISR / 16: Particle 12 | 1MΩ, DC |
+| proDig[4-15-1] | Digital [4-15]  | internal time tracking ISR / 16: Particle 1  | TTL |
+
 
 
 Capacitor Configurations
@@ -200,21 +213,22 @@ Capacitor Configurations
 Software Configuration
 ----------------------
 
-| Setup ID | Averaging Method | outlier rejection | FiFo Size [Elements] | Pitch | Other Configuration |
-|----------|------------------|-------------------|----------------------|-------|-------|
-| soft1    | mean             | -                 | 4                    | 12   | baud1, time1 |
-| soft2    | progressive mean (75% of old value + 25 % new value) | - | -| 12   | baud1, time1 |
-| soft3    | raw observation  | -                 | -                    | 12   | baud1, time1 | 
-| soft4    | least square fitting  | -            | 40                   | 12   | baud1, time1 | 
-| soft5    | mean without outlier  | 2*σ          | 4                    | 12   | baud1, time1 | 
-| soft6    | mean             | -                 | 4                    | 16   | baud1, time1 | 
-| soft7    | mean             | -                 | 4                    | 20   | baud1, time1 | 
-| soft8    | mean             | -                 | 4                    | 24   | baud1, time1 | 
-| soft9    | mean             | -                 | 4                    | 28   | baud1, time1 | 
-| soft10   | -                | -                 | -                    | -    | baud1, time1 | 
-| soft11   | mean             | -                 | 4                    | 0    | baud1, time1 | 
-| soft12   | mean             | -                 | 4                    | 18   | baud1, time1 | 
-| soft13   | mean             | -                 | 4                    | 22   | baud1, time1 | 
+| Setup ID | Averaging Method | outlier rejection | FiFo Size [Elements] | Pitch | Phase Shifting | Other Configuration |
+|----------|------------------|-------------------|----------------------|-------|----------------|---------------------|
+| soft1    | mean             | -                 | 4                    | 12    | -              | baud1, time1        |
+| soft2    | progressive mean (75% of old value + 25 % new value) | - | -| 12    | -              | baud1, time1        |
+| soft3    | raw observation  | -                 | -                    | 12    | -              | baud1, time1        | 
+| soft4    | least square fitting  | -            | 40                   | 12    | -              | baud1, time1        | 
+| soft5    | mean without outlier  | 2*σ          | 4                    | 12    | -              | baud1, time1        | 
+| soft6    | mean             | -                 | 4                    | 16    | -              | baud1, time1        | 
+| soft7    | mean             | -                 | 4                    | 20    | -              | baud1, time1        | 
+| soft8    | mean             | -                 | 4                    | 24    | -              | baud1, time1        | 
+| soft9    | mean             | -                 | 4                    | 28    | -              | baud1, time1        | 
+| soft10   | -                | -                 | -                    | -     | -              | baud1, time1        | 
+| soft11   | mean             | -                 | 4                    | 0     | -              | baud1, time1        | 
+| soft12   | mean             | -                 | 4                    | 18    | -              | baud1, time1        | 
+| soft13   | mean             | -                 | 4                    | 22    | -              | baud1, time1        | 
+| soft14   | mean             | -                 | 4                    | 22    | yes (final impl.) | baud1, time1        | 
 
 | Setup ID | Manchester Clock Delay [MCU Cycles] | Overtime Limit Short Interval | Overtime Limit Long Interval |
 |----------|-----------|-------------------------------|--------------------------------------------------------|
