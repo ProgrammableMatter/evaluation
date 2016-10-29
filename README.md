@@ -175,23 +175,21 @@ Oscilloscope Measurement Notes
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
 
-| Setup ID | File Name | Notes |
-|----------|-----------|-------|                                                                                    
-| file1    | [all-12-ttclocks-plus-div16.set](./results/osc-setup)                                                  | | 
-| file2    | [fft.set](./results/osc-setup)                                                                         | | 
-| file3    | [fx-trend-20s.set](./results/osc-setup)                                                                | | 
-| file4    | [fx-trend-46s.set](./results/osc-setup)                                                                | | 
-| file5    | [fx-trend-5s.set](./results/osc-setup)                                                                 | | 
-| file6    | [fx-trend-98s.set](./results/osc-setup)                                                                | | 
-| file7    | [fx-trend_long-term-2s.set](./results/osc-setup)                                                       | | 
-| file8    | [fx-trend.set](./results/osc-setup)                                                                    | | 
-| file9    | [jitter-clk-after-40us.set](./results/osc-setup)                                                       | | 
-| file10   | [period-16x.set](./results/osc-setup)                                                                  | | 
-| file11   | [rx-last-falling-edge-histogram.set](./results/osc-setup)                                              | | 
-| file12   | [fx-trend-oscillating-osccal-step1-minmaxoffset8-50s](./results/osc-setup)                             | |
-| file13   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-2msdiv.set](./results/osc-setup)  | |
-| file14   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-20msdiv.set](./results/osc-setup) | |
-
+| Setup ID | File Name | Probe Setup | Notes |
+|----------|-----------|-------------|-------|                                                                                    
+| file1    | [all-12-ttclocks-plus-div16.set](./results/osc-setup)                                                  | proDig[1-12] time tracking particle (1-12,1), proDig[13-15] pre-scaled (16) time tracking particle (1-4,1), net1 | all 12 local time tracking interval plus 4 times with prescaler 16 at particles (1-4,1) | 
+| file3    | [fx-trend-20s.set](./results/osc-setup)                                                                | proAn[1-4] time tracking particle ({1,4,7,12},1), net1 | local time tradking clock frequency trend, highlighting sync. at start, 20 sec., triggers an power on, single shot | 
+| file4    | [fx-trend-46s.set](./results/osc-setup)                                                                | proAn[1-4] time tracking particle ({1,4,7,12},1), net1 | local time tradking clock frequency trend, highlighting sync. at start, 46 sec., triggers an power on, single shot | 
+| file5    | [fx-trend-5s.set](./results/osc-setup)                                                                 | proAn[1-4] time tracking particle ({1,4,7,12},1), net1 | local time tradking clock frequency trend, highlighting sync. at start, 5 sec., triggers an power on, single shot |  
+| file6    | [fx-trend-98s.set](./results/osc-setup)                                                                | proAn[1-4] time tracking particle ({1,4,7,12},1), net1 | local time tradking clock frequency trend, highlighting sync. at start, 98 sec, triggers an power on, single shot| 
+| file7    | [fx-trend_long-term-2s.set](./results/osc-setup)                                                       | proAn[1-4] time tracking particle ({1,4,7,12},1), net1 | local time tracking clock freuqency trend, highlighting long term sync., 2sec, triggers consecutive | 
+| file8    | [fx-trend.set](./results/osc-setup)                                                                    | proAn[1-4] time tracking particle ({1,4,7,12},1), net1 | |
+| file9    | [jitter-clk-after-40us.set](./results/osc-setup)                                                       | proAn[1-4] CLKOUT ({1,4,7,12},1), net1 | histrogram showing the cummulated (~8MHz= RC's clock jitter at 40µs after trigger |  
+| file10   | [period-16x.set](./results/osc-setup)                                                                  | proAn[1-4] CLKOUT ({1,4,7,12},1), net1 | | 
+| file11   | [rx-last-falling-edge-histogram.set](./results/osc-setup)                                              | proAn1 rx north of particle ({3-12},1), net1 | highlighting normal distribution of package duration and integer discretization among syncrhonizing particles | 
+| file12   | [fx-trend-oscillating-osccal-step1-minmaxoffset8-50s.set](./results/osc-setup)                         | proAn[1-4] time tracking particle ({1,4,7,12},1), net | long term sync. with oscillating MCU frequency of particle (1,1), highlichting automatic clock sekew adjustment |
+| file13   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-2msdiv.set](./results/osc-setup)  | proAn[1-4] left actuator line | highlighting actuation start inaccuracy, 2ms div |
+| file14   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-20msdiv.set](./results/osc-setup) | proAn[1-4] left actuator line | highlighting actuation start inaccuracy, 20ms div |
 
 
 | Function Config ID | Function Name | Action | Input Data | Color |
