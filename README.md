@@ -105,6 +105,15 @@ Actuation
 | Result | Setup | Description | 
 |--------|-------|-------------|
 | <img src="./results/actuation/actuation-mode100percent-net1-heat-lr-wire-all-particles-last4-crash-vcc-p1-5v-vcc-p12.png" width=100 /> | soft14, caps1, osc11,  proAn4-2, net1, mcu2 | simulataneous heat range command of both wires, Vcc at last particle, particles (7-12,1) crashed due to glitch |
+| | | |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-2.png" width=100 /> | soft16, caps1, osc12, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-3.png" width=100 /> | soft16, caps1, osc12, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-4.png" width=100 /> | soft16, caps1, osc12, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-5.png" width=100 /> | soft16, caps1, osc12, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-6.png" width=100 /> | soft16, caps1, osc12, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-7.png" width=100 /> | soft16, caps1, osc12, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-8.png" width=100 /> | soft16, caps1, osc13, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
+| <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-9.png" width=100 /> | soft16, caps1, osc13, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
 
 
 Setup Configurations
@@ -160,24 +169,29 @@ Oscilloscope Measurement Notes
 | osc8     | 39.0µs - 40.1µs         | 20G     | An. 1, 2.5v, falling               | 40µ              | 20ns      | 
 | osc9     |-50ms   - 20ms           | 5M      | Digital 4, TTL, falling            |  0               | 10ms      |
 | osc10    | -25s - 25s              | 2M      | An. 1, 3.8v, rising local time ISR | 0                | 5s        |  
-| osc11    | -1s - 1s                | 2M      | roll mode,                         | -                | 200m      |
+| osc11    | -1s - 1s                | 2M      | roll mode,                         | -                | 200ms     |
+| osc12    | -100ms - 100ms          | 5M      | An. 1, 2.549v, falling             | 0                | 20ms      | 
+| osc13    | -10ms - 10ms           | 5M      | An. 1, 2.549v, falling             | 0               | 2ms      | 
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
 
 | Setup ID | File Name | Notes |
-|----------|-----------|-------|
-| file1    | [all-12-ttclocks-plus-div16.set](./results/osc-setup)                      | | 
-| file2    | [fft.set](./results/osc-setup)                                             | | 
-| file3    | [fx-trend-20s.set](./results/osc-setup)                                    | | 
-| file4    | [fx-trend-46s.set](./results/osc-setup)                                    | | 
-| file5    | [fx-trend-5s.set](./results/osc-setup)                                     | | 
-| file6    | [fx-trend-98s.set](./results/osc-setup)                                    | | 
-| file7    | [fx-trend_long-term-2s.set](./results/osc-setup)                           | | 
-| file8    | [fx-trend.set](./results/osc-setup)                                        | | 
-| file9    | [jitter-clk-after-40us.set](./results/osc-setup)                           | | 
-| file10   | [period-16x.set](./results/osc-setup)                                      | | 
-| file11   | [rx-last-falling-edge-histogram.set](./results/osc-setup)                  | | 
-| file12   | [fx-trend-oscillating-osccal-step1-minmaxoffset8-50s](./results/osc-setup) | |
+|----------|-----------|-------|                                                                                    
+| file1    | [all-12-ttclocks-plus-div16.set](./results/osc-setup)                                                  | | 
+| file2    | [fft.set](./results/osc-setup)                                                                         | | 
+| file3    | [fx-trend-20s.set](./results/osc-setup)                                                                | | 
+| file4    | [fx-trend-46s.set](./results/osc-setup)                                                                | | 
+| file5    | [fx-trend-5s.set](./results/osc-setup)                                                                 | | 
+| file6    | [fx-trend-98s.set](./results/osc-setup)                                                                | | 
+| file7    | [fx-trend_long-term-2s.set](./results/osc-setup)                                                       | | 
+| file8    | [fx-trend.set](./results/osc-setup)                                                                    | | 
+| file9    | [jitter-clk-after-40us.set](./results/osc-setup)                                                       | | 
+| file10   | [period-16x.set](./results/osc-setup)                                                                  | | 
+| file11   | [rx-last-falling-edge-histogram.set](./results/osc-setup)                                              | | 
+| file12   | [fx-trend-oscillating-osccal-step1-minmaxoffset8-50s](./results/osc-setup)                             | |
+| file13   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-2msdiv.set](./results/osc-setup)  | |
+| file14   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-20msdiv.set](./results/osc-setup) | |
+
 
 
 | Function Config ID | Function Name | Action | Input Data | Color |
@@ -190,28 +204,30 @@ Oscilloscope Measurement Notes
 
 | Connection ID | Probe | Input Data | Coupling |
 |---------------|-------|------------|----------|
-| proAn1-1 | Analogue 1 | internal time tracking ISR: Particle  1                 | 1MΩ, DC |
-| proAn2-1 | Analogue 2 | internal time tracking ISR: Particle  4                 | 1MΩ, DC |
-| proAn3-1 | Analogue 3 | internal time tracking ISR: Particle  7                 | 1MΩ, DC |
-| proAn4-1 | Analogue 4 | internal time tracking ISR: Particle 12                 | 1MΩ, DC |
-| proAn1-2 | Analogue 1 | rx north, particle 2, address (2,1)                     | 1MΩ, DC |
-| proAn1-3 | Analogue 1 | rx north, particle 3, address (3,1)                     | 1MΩ, DC |
-| proAn1-4 | Analogue 1 | rx north, particle 4, address (4,1)                     | 1MΩ, DC |
-| proAn1-5 | Analogue 1 | rx north, particle 5, address (5,1)                     | 1MΩ, DC |
-| proAn1-6 | Analogue 1 | rx north, particle 6, address (6,1)                     | 1MΩ, DC |
-| proAn1-7 | Analogue 1 | rx north, particle 7, address (7,1)                     | 1MΩ, DC |
-| proAn1-8 | Analogue 1 | rx north, particle 8, address (8,1)                     | 1MΩ, DC |
-| proAn1-9 | Analogue 1 | rx north, particle 9, address (9,1)                     | 1MΩ, DC |
-| proAn1-10 | Analogue 1 | rx north, particle 10, address (10,1)                  | 1MΩ, DC |
-| proAn1-11 | Analogue 1 | rx north, particle 11, address (11,1)                  | 1MΩ, DC |
-| proAn1-12 | Analogue 1 | rx north, particle 12, address (12,1)                  | 1MΩ, DC |
-| proAn1-13 | Analogue 1 | CLK out, particle 1, address (1,1)                     | 1MΩ, DC |
-| proAn1-14 | Analogue 1 | internal time tracking ISR / 16: Particle  1           | 1MΩ, DC |
-| proAn2-14 | Analogue 2 | internal time tracking ISR / 16: Particle  4           | 1MΩ, DC |
-| proAn3-14 | Analogue 3 | internal time tracking ISR / 16: Particle  7           | 1MΩ, DC |
-| proAn4-14 | Analogue 4 | internal time tracking ISR / 16: Particle 12           | 1MΩ, DC |
-| proDig[4-15-1] | Digital [4-15]  | internal time tracking ISR / 16: Particle 1  | TTL     |
-| proAn4-2  | Analogue 4 | Vcc at last particle, address (12,1)                   | 1MΩ, DC |
+| proAn1-1 | Analogue 1 | internal time tracking ISR: Particle  1                       | 1MΩ, DC |
+| proAn2-1 | Analogue 2 | internal time tracking ISR: Particle  4                       | 1MΩ, DC |
+| proAn3-1 | Analogue 3 | internal time tracking ISR: Particle  7                       | 1MΩ, DC |
+| proAn4-1 | Analogue 4 | internal time tracking ISR: Particle 12                       | 1MΩ, DC |
+| proAn1-2 | Analogue 1 | rx north, particle 2, address (2,1)                           | 1MΩ, DC |
+| proAn1-3 | Analogue 1 | rx north, particle 3, address (3,1)                           | 1MΩ, DC |
+| proAn1-4 | Analogue 1 | rx north, particle 4, address (4,1)                           | 1MΩ, DC |
+| proAn1-5 | Analogue 1 | rx north, particle 5, address (5,1)                           | 1MΩ, DC |
+| proAn1-6 | Analogue 1 | rx north, particle 6, address (6,1)                           | 1MΩ, DC |
+| proAn1-7 | Analogue 1 | rx north, particle 7, address (7,1)                           | 1MΩ, DC |
+| proAn1-8 | Analogue 1 | rx north, particle 8, address (8,1)                           | 1MΩ, DC |
+| proAn1-9 | Analogue 1 | rx north, particle 9, address (9,1)                           | 1MΩ, DC |
+| proAn1-10 | Analogue 1 | rx north, particle 10, address (10,1)                        | 1MΩ, DC |
+| proAn1-11 | Analogue 1 | rx north, particle 11, address (11,1)                        | 1MΩ, DC |
+| proAn1-12 | Analogue 1 | rx north, particle 12, address (12,1)                        | 1MΩ, DC |
+| proAn1-13 | Analogue 1 | CLK out, particle 1, address (1,1)                           | 1MΩ, DC |
+| proAn1-14 | Analogue 1 | internal time tracking ISR / 16: Particle  1                 | 1MΩ, DC |
+| proAn2-14 | Analogue 2 | internal time tracking ISR / 16: Particle  4                 | 1MΩ, DC |
+| proAn3-14 | Analogue 3 | internal time tracking ISR / 16: Particle  7                 | 1MΩ, DC |
+| proAn4-14 | Analogue 4 | internal time tracking ISR / 16: Particle 12                 | 1MΩ, DC |
+| proDig[4-15]-1 | Digital [4-15]  | internal time tracking ISR / 16: Particle 1        | TTL     |
+| proAn4-2  | Analogue 4 | Vcc at last particle, address (12,1)                         | 1MΩ, DC |
+| proDig[4-14]-2 | Digital [4-14]  | transmitter before actuator, pulling Vcc to GND; dig. 4 at particle 1, ... dig. 14 at particle 11 | 1MΩ, DC |
+| proAn[1-4]-15  | Analgogue [1-4] | transmitter before actuator, pulling Vcc to GND; dig. 4 at particle 1, ... dig. 14 at particle 11 | 1MΩ, DC |
 
 
 
