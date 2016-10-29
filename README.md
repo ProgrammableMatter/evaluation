@@ -104,7 +104,7 @@ Actuation
 ---------
 | Result | Setup | Description | 
 |--------|-------|-------------|
-| <img src="./results/actuation/actuation-mode100percent-net1-heat-lr-wire-all-particles-last4-crash-vcc-p1-5v-vcc-p12.png" width=100 /> | soft14, caps1, osc11,  proAn4-2, net1, mcu1 | simulataneous heat range command of both wires, Vcc at last particle, particles (7-12,1) crashed due to glitch |
+| <img src="./results/actuation/actuation-mode100percent-net1-heat-lr-wire-all-particles-last4-crash-vcc-p1-5v-vcc-p12.png" width=100 /> | soft14, caps1, osc11,  proAn4-2, net1, mcu2 | simulataneous heat range command of both wires, Vcc at last particle, particles (7-12,1) crashed due to glitch |
 
 
 Setup Configurations
@@ -261,4 +261,14 @@ Mircocontroller Configuration
 
 | Configuration ID | Details | Fuses | Power Supply |
 |------------------|---------|-------|--------------|
-| mcu1             | internal RC 8MHz, clk out | ```FUSES = { .low =  (FUSE_SUT_CKSEL0 & FUSE_SUT_CKSEL2 & FUSE_SUT_CKSEL3 & FUSE_SUT_CKSEL4 & FUSE_CKOUT), .high = HFUSE_DEFAULT, .extended = EFUSE_DEFAULT,};``` | Anker, USB, max. 5V/3A |
+| mcu1             | internal RC 8MHz, clk out | ```FUSES = { .low =  (FUSE_SUT_CKSEL0 & FUSE_SUT_CKSEL2 & FUSE_SUT_CKSEL3 & FUSE_SUT_CKSEL4 & FUSE_CKOUT), .high = HFUSE_DEFAULT, .extended = EFUSE_DEFAULT,};``` | pwr1 |
+| mcu2             | internal RC 8MHz, clk out | ```FUSES = { .low =  (FUSE_SUT_CKSEL0 & FUSE_SUT_CKSEL2 & FUSE_SUT_CKSEL3 & FUSE_SUT_CKSEL4 & FUSE_CKOUT), .high = HFUSE_DEFAULT, .extended = EFUSE_DEFAULT,};``` | pwr2 |
+
+
+Power Supply
+------------
+| Configuratin ID | Supply | Details | 
+|-----------------|--------|---------|
+| pwr1            | Anker                | USB, max. DC 5V/3A |
+| pwr2            | BK Precision(R) 1550 | 5.1V/3A            |
+
