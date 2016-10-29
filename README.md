@@ -261,4 +261,14 @@ Mircocontroller Configuration
 
 | Configuration ID | Details | Fuses | Power Supply |
 |------------------|---------|-------|--------------|
-| mcu1             | internal RC 8MHz, clk out | ```FUSES = { .low =  (FUSE_SUT_CKSEL0 & FUSE_SUT_CKSEL2 & FUSE_SUT_CKSEL3 & FUSE_SUT_CKSEL4 & FUSE_CKOUT), .high = HFUSE_DEFAULT, .extended = EFUSE_DEFAULT,};``` | Anker, USB, max. 5V/3A |
+| mcu1             | internal RC 8MHz, clk out | ```FUSES = { .low =  (FUSE_SUT_CKSEL0 & FUSE_SUT_CKSEL2 & FUSE_SUT_CKSEL3 & FUSE_SUT_CKSEL4 & FUSE_CKOUT), .high = HFUSE_DEFAULT, .extended = EFUSE_DEFAULT,};``` | pwr1 |
+| mcu1             | internal RC 8MHz, clk out | ```FUSES = { .low =  (FUSE_SUT_CKSEL0 & FUSE_SUT_CKSEL2 & FUSE_SUT_CKSEL3 & FUSE_SUT_CKSEL4 & FUSE_CKOUT), .high = HFUSE_DEFAULT, .extended = EFUSE_DEFAULT,};``` | pwr2 |
+
+
+Pwer Supply
+------------
+| Configuratin ID | Supply | Details | 
+|-----------------|--------|---------|
+| pwr1            | Anker                | USB, max. DC 5V/3A |
+| pwr2            | BK Precision(R) 1550 | 5.1V/3A            |
+
