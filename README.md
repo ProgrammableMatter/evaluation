@@ -115,7 +115,13 @@ Actuation
 | <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-8.png" width=100 /> | soft16, caps1, osc13, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
 | <img src="./results/actuation/actution-mode100percent-net1-heatleft-rangeall-caps1-vcc5100mv-60syncpackages-9.png" width=100 /> | soft16, caps1, osc13, proDig[4-14]-2, proAn[1-4]-15, net1, mcu2 | experiment 1: simulataneous heat range command (left wire), switch from Vcc to GND at transmitter's actuator line |
 
+Boot Delay Measurement
+----------------------
+| Result | Setup | Description | 
+|--------|-------|-------------|
+| <img src="./results/boot-delay/boot-delay-until-discovery-3x3-net1-caps0-power2.png" width=100 /> | soft16, caps0, osc14, proAn[1,2]-16, proDig[1-8]-16, net1, mcu2 | showing Vcc drop vs. boot delay |
 
+ 
 Setup Configurations
 ====================
 
@@ -171,7 +177,8 @@ Oscilloscope Measurement Notes
 | osc10    | -25s - 25s              | 2M      | An. 1, 3.8v, rising local time ISR | 0                | 5s        |  
 | osc11    | -1s - 1s                | 2M      | roll mode,                         | -                | 200ms     |
 | osc12    | -100ms - 100ms          | 5M      | An. 1, 2.549v, falling             | 0                | 20ms      | 
-| osc13    | -10ms - 10ms           | 5M      | An. 1, 2.549v, falling             | 0               | 2ms      | 
+| osc13    | -10ms - 10ms            | 5M      | An. 1, 2.549v, falling             | 0                | 2ms       |
+| osc14    | -10ms - 40ms            | 20M     | An. 1, 2.0V, rising                | 15m              | 5ms       |
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
 
@@ -190,6 +197,7 @@ Oscilloscope Measurement Notes
 | file12   | [fx-trend-oscillating-osccal-step1-minmaxoffset8-50s.set](./results/osc-setup)                         | proAn[1-4] time tracking particle ({1,4,7,12},1), net | long term sync. with oscillating MCU frequency of particle (1,1), highlichting automatic clock sekew adjustment |
 | file13   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-2msdiv.set](./results/osc-setup)  | proAn[1-4] left actuator line | highlighting actuation start inaccuracy, 2ms div |
 | file14   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-20msdiv.set](./results/osc-setup) | proAn[1-4] left actuator line | highlighting actuation start inaccuracy, 20ms div |
+| file15   | [boot-delay-until-discovery-3x3-network.set](./results/osc-setup)                                      | proAn[1,3]-16, proDig[1-8]-16 | showing Vcc of 1st and last particle and discovrey start |
 
 
 | Function Config ID | Function Name | Action | Input Data | Color |
@@ -226,7 +234,8 @@ Oscilloscope Measurement Notes
 | proAn4-2  | Analogue 4 | Vcc at last particle, address (12,1)                         | 1MΩ, DC |
 | proDig[4-14]-2 | Digital [4-14]  | transmitter before actuator, pulling Vcc to GND; dig. 4 at particle 1, ... dig. 14 at particle 11 | 1MΩ, DC |
 | proAn[1-4]-15  | Analgogue [1-4] | transmitter before actuator, pulling Vcc to GND; dig. 4 at particle 1, ... dig. 14 at particle 11 | 1MΩ, DC |
-
+| proAn[1,3]-16  | Analogue [1,3]  | Vcc at (1,1) and (3,3) of a (3x3) network          | 1MΩ, DC |
+| proDig[1-8]-16 | Digital [1-8]   | RX at node ID [1-8]                                | TTL     |
 
 
 Capacitor Configurations
