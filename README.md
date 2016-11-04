@@ -25,6 +25,22 @@ Clock Skew Synchronization
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-1.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-2.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-3.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-4.png" width=100 /> | soft18 cap0, osc15, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 50s, pre-filled fifo |
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-1.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-2.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-3.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-4.png" width=100 /> | soft17 cap0, osc15, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 50s, empty fifo |
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-1.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-2.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-3.png" width=100 />   <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-4.png" width=100 /> | soft17 cap0, osc16, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 89s, empty fifo |
+
+
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier5sigma-p234-0.png" width=100 /> 
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier5sigma-p234-0.png" width=100 /> 
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier5sigma-p234-0.png" width=100 /> 
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier5sigma-p234-0.png" width=100 /> 
+|  |
+
+
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier10sigma-p234-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier10sigma-p234-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier10sigma-p234-0.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98-fifoprefilling-outlier10sigma-p234-0.png" width=100 /> 
+| |
+
+
 | <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-4.png" width=100 /> | soft5 cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean without outlier 2sigma, 20s |
 
 | Video | Setup | Description | 
@@ -277,6 +293,8 @@ Software Configuration
 | soft16   | mean             | -                 | 4                    | 0 (fixed issue) | -    | baud1, time1        |
 | soft17    | least square fitting  | -           | 40                   | 0 (fixed issue) | -    | baud1, time1        | 
 | soft18    | least square fitting  | -           | 40 (pre filled queue) | 0 (fixed issue) | -   | baud1, time1        | 
+| soft18    | least square fitting  | 5*sigma     | 40 (pre filled queue) | 0 (fixed issue) | -   | baud1, time1        | 
+| soft18    | least square fitting  | 10*sigma    | 40 (pre filled queue) | 0 (fixed issue) | -   | baud1, time1        | 
 
 | Setup ID | Manchester Clock Delay [MCU Cycles] | Overtime Limit Short Interval | Overtime Limit Long Interval |
 |----------|-----------|-------------------------------|--------------------------------------------------------|
