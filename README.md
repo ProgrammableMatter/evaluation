@@ -204,6 +204,8 @@ Oscilloscope Measurement Notes
 | file13   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-2msdiv.set](./results/osc-setup)  | proAn[1-4] left actuator line | highlighting actuation start inaccuracy, 2ms div |
 | file14   | [actuation-range-all-left-net1-caps1-trigger-particle2-left-actuator-20msdiv.set](./results/osc-setup) | proAn[1-4] left actuator line | highlighting actuation start inaccuracy, 20ms div |
 | file15   | [boot-delay-until-discovery-3x3-network.set](./results/osc-setup)                                      | proAn[1,3]-16, proDig[1-8]-16 | showing Vcc of 1st and last particle and discovrey start |
+| file16   | [fx-trend-oscillating-osccal-step1-minmaxoffset8-50s.set](.results/osc-setup)                          | proAn[1-4]-1 | showing clock skew compensation when paticle (1,1) increments/decrements the OSCCAL value until OSCCAL +/- 8 |
+| file17   | [fx-trend-98s-least-squares-fitting.set](./results/osc-setup)                                          | proAn[1-4]-1 | showing time tracking  frequency trend of 98 seconds, setup used for least square fitting |
 
 
 | Function Config ID | Function Name | Action | Input Data | Color |
