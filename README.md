@@ -21,7 +21,32 @@ Clock Skew Synchronization
 | <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c560-each2nd-particle-order1-20sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c560-each2nd-particle-order1-20sec-1.png" width=100 />   <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c560-each2nd-particle-order1-20sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c560-each2nd-particle-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c560-each2nd-particle-order1-20sec-4.png" width=100 /> | soft3, cap1, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | raw observation, caps, 20s | 
 | <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c0-order1-20sec-0.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/raw-observation/sync-clock-skew-raw-observation-pitch12-c0-order1-20sec-4.png" width=100 />  | soft3, cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | raw observation, 20s | 
 | <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch12-c0-order1-46sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch12-c0-order1-46sec-1.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch12-c0-order1-46sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch12-c0-order1-46sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-raw-observation-and-least-square-pitch12-c0-order1-46sec-4.png" width=100 /> | soft3, soft4 (particle 4), cap0, osc3, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | particle 4 having linear regression, raw observation otherwise, 46s |
-| <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-4.png" width=100 /> | soft4 cap0, osc4, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 98s |
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-2.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-3.png" width=100 /> <img src="./results/clock-skew-synchronization/least-square-linear-regression/sync-clock-skew-least-square-pitch12-c0-order1-98sec-4.png" width=100 /> | soft4 cap0, osc4, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 98s, probe An. 3 and An. 4 mistakenly swapped |
+
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-0.png" width=100 /> 
+<img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-1.png" width=100 /> 
+<img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-2.png" width=100 /> 
+<img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-3.png" width=100 /> 
+<img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-fifoprefilling-4.png" width=100 /> 
+ | soft18 cap0, osc15, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 50s, pre-filled fifo |
+ 
+ 
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-0.png" width=100 /> 
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-1.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-2.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-3.png" width=100 />
+ <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-50-nofifoprefilling-4.png" width=100 />
+ | soft17 cap0, osc15, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 50s, empty fifo |
+
+
+| <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-0.png" width=100 /> 
+  <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-1.png" width=100 /> 
+  <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-2.png" width=100 /> 
+  <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-3.png" width=100 /> 
+  <img src="./results/clock-skew-synchronization/least-square-linear-regression/fifo4-leasts-square-fitting-fixedpitch-net1-caps0-98s-nofifoprefilling-4.png" width=100 /> 
+ | soft17 cap0, osc16, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | linear regression, overshooting, 89s, empty fifo |
+
+
 | <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-0.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-1.png" width=100 /> <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-2.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-3.png" width=100 />  <img src="./results/clock-skew-synchronization/fifo-mean-outlier-2sigma/sync-clock-skew-mean-2sigma-outlier-pitch12-c0-order1-20sec-4.png" width=100 /> | soft5 cap0, osc2, net1, mcu1, func[1-4]-1, proAn[1-4]-1 | fifo 4, mean without outlier 2sigma, 20s |
 
 | Video | Setup | Description | 
@@ -179,6 +204,9 @@ Oscilloscope Measurement Notes
 | osc12    | -100ms - 100ms          | 5M      | An. 1, 2.549v, falling             | 0                | 20ms      | 
 | osc13    | -10ms - 10ms            | 5M      | An. 1, 2.549v, falling             | 0                | 2ms       |
 | osc14    | -10ms - 40ms            | 20M     | An. 1, 2.0V, rising                | 15m              | 5ms       |
+| osc15    |       - 49.7s           | 1M      | An. 1, 3.8v, rising local time ISR | 722.8m           | 5s        |
+| osc16    |       - 98s             | 1M      | An. 1, 3.8v, rising local time ISR | 0                | 10s       |
+
    
 * Oscilloscope: Keysight MSO-S 354A Mixed Signal Oscilloscope 2.5GHz 20GSa/s 10-bit ADC infiniium S-Series
 
@@ -267,6 +295,8 @@ Software Configuration
 | soft14   | mean             | -                 | 4                    | 22    | yes (final impl.) | baud1, time1     | 
 | soft15   | mean             | -                 | 4                    | 0 (fixed issue) | -    | baud1, time1, oscillating OSCCAL+/-8, increment on each time PDU having "isNextSyncPackageTimeUpdateRequest" flag set |
 | soft16   | mean             | -                 | 4                    | 0 (fixed issue) | -    | baud1, time1        |
+| soft17    | least square fitting  | -           | 40                   | 0 (fixed issue) | -    | baud1, time1        | 
+| soft18    | least square fitting  | -           | 40 (pre filled queue) | 0 (fixed issue) | -   | baud1, time1        | 
 
 | Setup ID | Manchester Clock Delay [MCU Cycles] | Overtime Limit Short Interval | Overtime Limit Long Interval |
 |----------|-----------|-------------------------------|--------------------------------------------------------|
